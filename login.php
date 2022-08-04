@@ -26,14 +26,14 @@
           ><h4><b>Login Page</b></h4></span
         >
         <hr />
-        <form class="login-form">
-          <input type="text" name="email" placeholder="Email" />
-          <input type="password" name="password" placeholder="Password" />
-          <button>login</button>
+        <form class="login-form" method="POST" action="">
+          <input type="text" name="username" placeholder="Username" required="required" autocomplete="off" />
+          <input type="password" name="password" placeholder="Password" required="required" autocomplete="off" />
+          <button type="submit">LOGIN</button>
           <p class="message">
             Not registered? <a href="register.php">Create an account</a>
           </p>
-          <p class="message">Back to <a href="index.php">Home</a></p>
+          <p class="message">Back to <a href="index.php">Home</a></p> 
         </form>
       </div>
     </div>

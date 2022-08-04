@@ -26,15 +26,17 @@
           ><h4><b>Register Page</b></h4></span
         >
         <hr />
-        <form class="register-form"></form>
-        <input type="text" name="name" placeholder="Name" />
-        <input type="text" name="email" placeholder="Email" />
-        <input type="password" name="password" placeholder="Password" />
-        <input type="text" name="phone" placeholder="Phone" />
-        <button>create account</button>
-        <p class="message">
-          Already registered? <a href="login.php">Sign In</a>
-        </p>
+        <form class="login-form" action="" method="POST">
+          <input type="text" class="input" required="required" name="nama" placeholder="Nama Lengkap" />
+          <input type="text" class="input" required="required" name="username" placeholder="Username" />
+          <input type="password" class="input" required="required" name="password" placeholder="Password" />
+          <input type="text" class="input" required="required" name="phone" placeholder="Phone" />
+          <input type="hidden" class="input" name="role" value="pelanggan"/>
+        <button type="submit">Create Account</button>
+          <p class="message">
+            Already registered? <a href="login.php">Sign In</a>
+          </p>
+        </form>
       </div>
     </div>
     <!-- Footer Section End -->
